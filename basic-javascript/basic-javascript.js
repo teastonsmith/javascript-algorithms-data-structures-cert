@@ -231,3 +231,67 @@ var myNewConcatenatedString = 'This is the first sentence. ';
 myNewConcatenatedString += 'This is the second sentence';
 
 // 26. Constructing Strings with Variables
+
+// variables assigned to strings may be concatenated together with other strings
+
+var myName = "Easton";
+var myStr = "My name is " + myName + " and I am well!";
+
+// 27. Appending Variables to Strings
+
+// we can also append variables to a string using the += operator
+
+var someAdjective = "Awesome";
+var myStr = "Learning to code is " 
+myStr += someAdjective;
+
+// 28.  Find the Length of a String
+
+// you can find the length of a string by writing .length after the string variable or string literal
+
+var lastNameLength = 0;
+var lastName = "Lovelace";
+lastNameLength = lastName.length
+
+// 29. Use Bracket Notation to Find the First Character in a String
+
+// bracket notation is a way to find a character's index within a string
+
+var firstLetterOfLastName = "";
+var lastName = "Lovelace";
+firstLetterOfLastName = lastName[0];
+
+// 30. Understand String Immutability
+
+// in JavaScript strings are immutable, meaning that the individual characters cannot be changed once the string has been assigned a variable
+
+var myStr = "Bob";
+myStr[0] = "J";
+
+// this does not work
+
+var myStr = "Bob";
+myStr = "Job";
+
+// this does work
+
+// 31. Use Bracket Notation to find Nth Character in a String
+
+// as we can use bracket notation to find the first character in a string, we may also use it to identify other character's index numbers
+
+var lastName = "Lovelace";
+var thirdLetterOfLastName = lastName[2];
+
+// 32. Use Bracket Notation to find the last Character in a String
+
+//  in order to get a string's length you may subtract 1 from the strings length
+
+var lastName = "Lovelace";
+var lastLetterOfLastName = lastName[lastName.length - 1];
+
+// 33. Use Bracket Notation to find the Nth-to-last Character in a String
+
+// using the same principle as above, you may find the nth-to-last character of a string
+
+var lastName = "Lovelace";
+var secondToLastLetterOfLastName = lastName[lastName.length - 2];
